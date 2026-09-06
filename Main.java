@@ -1,22 +1,7 @@
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Entry point. Presents the main menu and drives the Add / Update / Remove /
- * Display / Search / Sort / Low-Stock workflows on top of InventoryManager.
- *
- * All user input is validated as a String BEFORE it is ever converted to a
- * number, so Integer.parseInt()/Double.parseDouble() are never used as the
- * only line of defense:
- *  - menu choices must be plain whole numbers within range (no letters,
- *    decimals, signs, leading zeros, scientific notation, or spaces-inside)
- *  - category input must be one of Clothing / Electronics / Entertainment
- *  - IDs and names cannot be blank, and IDs must be unique when adding
- *  - quantity must be a positive whole number with no leading zeros
- *  - price must be a positive number (whole or decimal) with no leading
- *    zeros and no scientific notation
- *  - extremely large numbers are caught and rejected instead of crashing
- */
+
 public class Main {
 
     private static final Scanner scanner = new Scanner(System.in);
